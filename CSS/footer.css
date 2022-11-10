@@ -1,0 +1,163 @@
+/* footer */
+footer .container {
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+
+
+}
+
+footer .container h5 {
+  padding-top: 0;
+  padding-bottom: 1rem;
+  color: #2C3038;
+  margin-bottom: 1rem;
+  font-size: 19px;
+}
+
+footer .container ul {
+  padding-left: 0;
+}
+
+footer .container li {
+  margin-bottom: 0.5rem;
+}
+
+footer .container a {
+  color: #656f7b;
+  font-size: 1rem!important;
+  font-weight: 400!important;
+}
+
+footer .container a:hover {
+  color: #dc4f72;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+footer > .row{
+  margin: 0 -2rem;
+
+}
+footer .container{
+    border-bottom: 0.01rem solid #d3cccc;
+}
+footer .bg-6 {
+  padding: 2.2rem;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+}
+footer .bg-6 h2{
+  padding-bottom: 0.5rem;
+  color: #2C3038;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+footer .bg-6 input {
+  margin-top: 0rem;
+  height: 3rem;
+  background: #F7F9FC;
+  border: none;
+  outline: none;
+  font-weight: 450;
+  color: #7A7A7A;
+}
+.form-control:focus {
+  color: inherit;
+  background: #F7F9FC;
+  border-color: none;
+  outline: 0;
+  box-shadow:none;
+}
+
+footer .colume p {
+  display: inline;
+  margin: 1.5rem 0!important;
+  font-size: 0.9rem!important;
+}
+footer .col-8, footer .col-4{
+  padding: 0;
+}
+footer .col-8{
+  flex-grow: 1;
+}
+footer .col-4{
+  flex-shrink: 1;
+}
+footer .colume {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: left;
+  
+}
+footer .row a{
+  font-size: 0.85rem !important;
+}
+
+footer .colume i {
+  color: #2C3038;
+  padding-right: 1.5rem;
+  transition: all 0.5s;
+}
+footer .colume i:hover{
+  color: #dc4f72;
+}
+
+footer .colume2 {
+  text-align: right;
+
+}
+footer .form-mail{
+  padding-left: 2.7rem;
+}
+footer .btn {
+  background-color: #dc4f72;
+  color: #fff;
+  padding: 0.6rem 1.9rem;
+  transition: all 0.5s;
+  border-color: #dc4f72;
+  margin-left: 1rem;
+  box-shadow: none;
+}
+footer .btn:hover{
+  border: 1px solid transparent;
+  background: #dc4f72;
+}
+footer .colume .row {
+  display: flex;
+
+}
+@media screen and (max-width:992px) {
+
+   footer .bg-6 {
+     padding: 0rem 0 0 0.4rem;
+   }
+
+   footer .bg-6 h2 {
+     margin: 0;
+   }
+
+   footer .colume,
+   .features .colume {
+     width: 100%;
+     text-align: center;
+   }
+
+   footer .colume {
+     width: 50%;
+     text-align: center;
+   }
+ footer .colume i {
+   padding-right: 0.5rem;
+ }
+}
+@media screen and (max-width:768px) {
+
+   footer .colume {
+     width: 100%;
+     text-align: center;
+   }
+    footer .colume i {
+      padding-right: 0.5rem;
+    }
+}

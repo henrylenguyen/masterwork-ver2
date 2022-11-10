@@ -1,0 +1,101 @@
+@mixin size($width,$height:$width) {
+  width: $width;
+  height: $height;
+}
+@mixin flexbox($align:flex-start,$justify:flex-start,$flex-direction:row,$wrap:nowrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+@mixin  grid($gap,$column: repeat(3,1fr),$justify:stretch){
+  display: grid;
+  grid-template-columns: $column;
+  gap: $gap;
+  justify-items: $justify;
+}
+.max-width{
+  max-width: 46.8rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.pt5{
+  padding-top: 5rem;
+}
+.text{
+  &-icon__list{
+    padding: 0;
+    display: flex;
+    margin: 1rem 0;
+    li{
+      font-size: 0.9rem;
+      margin-right: 1rem;
+      i{
+        font-size: 0.7.5rem;
+      }
+    }
+  }
+}
+.blog-content{
+  &__image{
+    border-radius: 10px;
+    overflow: hidden;
+    transition: var(--trainsition05s);
+      &:hover{
+        transform: var(--translateY);
+      }
+  }
+  &__text{
+    text-align: justify;
+  }
+  .text2{
+    img{
+      transition: var(--trainsition05s);
+      border-radius: 5px;
+      &:hover{
+        transform: var(--translateY);
+      }
+    }
+  }
+  &__title{
+    margin-top: 5rem;
+  }
+  h4{
+    a{
+      font-size: 2.1rem;
+      color: var(--title__color);
+      font-weight: 550;
+      line-height: 2.5rem;
+      &:hover{
+        text-decoration: none;
+      }
+  }
+}
+}
+.blockquote{
+  border-left: 3px solid var(--text__color);
+  padding: 1.2rem 5rem 1.2rem 3.125rem;
+  font-size: 1.5rem;
+  background: var(--background-color);
+  text-align: left;
+  q{
+   quotes: auto;
+  }
+  span{
+    font-size: 70%;
+    color: #6c757d;
+    padding-left: 1.5rem;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top:  50%;
+      background: #6c757d;
+      @include size(15px, 1px);
+    }
+  }
+  
+}

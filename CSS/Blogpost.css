@@ -1,0 +1,151 @@
+.child-nav {
+  width: 100%;
+  background-color: #F7F9FC;
+  padding: 0 7.28rem 0 7.28rem;
+  align-items: center;
+  height: 3rem;
+  position: relative;
+}
+
+.child-nav a {
+  font-size: 0.88rem;
+  color: var(--primary__color);
+}
+
+.child-div {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.child-nav span {
+  margin: 0 0.31rem 0 0;
+  font-size: 0.88rem;
+}
+
+.child-nav .lef {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+button.owl-prev,
+button.owl-next {
+  position: absolute;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--primary__color) !important;
+  opacity: 0.5;
+  border-radius: 50%;
+  bottom: 45%;
+  transition: all 0.5s;
+}
+
+button.owl-prev span,
+button.owl-next span {
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: inherit;
+}
+
+button.owl-prev:hover,
+button.owl-next:hover {
+  opacity: 1;
+}
+
+button.owl-prev {
+  left: 1%;
+}
+
+button.owl-next {
+  right: 1%;
+}
+
+.list-single {
+  margin: 0.5rem 0;
+  padding: 6rem 0;
+  background-color: rgb(247, 249, 252);
+}
+
+.list-single__item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.list-single__item i {
+  font-size: 13px;
+}
+
+.list-single__item:hover i {
+  transform: translateX(5px);
+}
+
+.list-single__image {
+  position: relative;
+}
+
+.list-single__image img {
+  height: 100%;
+}
+
+.list-single__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  justify-items: stretch;
+}
+
+.list-single__text {
+  background: #fff;
+  padding: 3rem 2rem;
+}
+
+.list-single__text h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.list-single__text h4 a {
+  color: var(--title__color);
+}
+
+.list-single__text h4 a:hover {
+  color: var(--primary__color);
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 0.5rem;
+}
+
+.pagination li:hover .page-link {
+  border: 1px solid var(--primary__color);
+  background: transparent;
+}
+
+.pagination li .active {
+  border: 1px solid var(--primary__color);
+  background: transparent;
+}
+
+.pagination .page-link {
+  border-radius: 8px;
+  color: var(--text__color);
+  font-weight: 500;
+  box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+  border: 1px solid #F7F9FC;
+  transition: 0.3s ease-in-out;
+}
+
+

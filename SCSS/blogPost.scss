@@ -1,0 +1,145 @@
+
+@mixin size($width,$height:$width) {
+  width: $width;
+  height: $height;
+}
+@mixin flexbox($align:flex-start,$justify:flex-start,$flex-direction:row,$wrap:nowrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+@mixin  grid($gap,$column: repeat(3,1fr),$justify:stretch){
+  display: grid;
+  grid-template-columns: $column;
+  gap: $gap;
+  justify-items: $justify;
+}
+
+.child-nav {
+    width: 100%;
+    background-color: #F7F9FC;
+    padding: 0 7.28rem 0 7.28rem;
+    align-items: center;
+    height: 3rem;
+    position: relative;
+}
+.child-nav a{
+  font-size: 0.88rem;
+  color: var(--primary__color);
+}
+.child-div {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.child-nav span {
+    margin: 0 0.31rem 0 0;
+    font-size: 0.88rem;
+}
+
+.child-nav .lef {
+    font-size: 1rem;
+    margin: 0;
+}
+.owl-dots{
+  display: none;
+}
+.owl-carousel {
+  position: relative;
+}
+button.owl-prev,button.owl-next{
+  position: absolute;
+  display: inline-block;
+  @include size(2.5rem);
+  background: var(--primary__color)!important;
+  opacity: 0.5;
+  border-radius: 50%;
+  bottom: 45%;
+  transition: all 0.5s;
+  span{
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: inherit;
+  }
+  &:hover{
+  opacity: 1;
+
+  }
+}
+button.owl-prev{
+  left: 1%;
+}
+button.owl-next{
+  right: 1%;
+}
+$background: rgb(247, 249, 252);
+.list-single{
+  margin: 0.5rem 0;
+  padding: 6rem 0;
+  background-color: $background;
+  &__item{
+    border-radius: 10px;
+    overflow: hidden;
+    i{
+      font-size: 13px;
+    }
+    &:hover{
+      i{
+        transform: translateX(5px);
+      }
+    }
+  }
+  &__image{
+    position: relative;
+    img{
+      height: 100%;
+    }
+  }
+  &__content{
+    @include grid(0,repeat(2,1fr));
+
+  }
+  &__text{
+    background: #fff;
+    padding: 3rem 2rem;
+    h4{
+      font-size: 1.6rem;
+      font-weight: 500;
+      a{
+        color: var(--title__color);
+        &:hover{
+        color: var(--primary__color);
+
+        }
+      }
+    }
+  }
+}
+.pagination{
+  justify-content: center;
+  li{
+    margin: 0 0.5rem;
+    &:hover{
+      .page-link{
+       border: 1px solid var(--primary__color);
+        background: transparent;
+      }
+    }
+    .active{
+       border: 1px solid var(--primary__color);
+        background: transparent;
+    }
+  }
+  .page-link{
+    border-radius: 8px;
+    color: var(--text__color);
+    font-weight: 500;
+    box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+    border: 1px solid #F7F9FC;
+    transition: 0.3s ease-in-out;
+
+  }
+}
