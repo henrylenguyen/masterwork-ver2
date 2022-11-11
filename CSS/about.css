@@ -1,15 +1,15 @@
 body {
     box-sizing: border-box;
-  
+
     width: 100%;
     text-align: center;
     height: 200vh;
 }
 
 :root {
-     --title__color: #2C3038;
-     --primary__color: #dc4f72;
-     --text__color: #5a5a5a;
+    --title__color: #2C3038;
+    --primary__color: #dc4f72;
+    --text__color: #5a5a5a;
 }
 
 h1,
@@ -137,8 +137,9 @@ a:hover {
     border-radius: 0.3rem;
     transition: all 0.3s;
 }
+
 .about .row .col img:hover {
-transform: translateY(-0.5rem);
+    transform: translateY(-0.5rem);
 }
 
 h4 {
@@ -497,7 +498,8 @@ h4 {
     color: #dc4f72;
     transition: all, 0.5s;
 }
-.team-member .items h4{
+
+.team-member .items h4 {
     transform: translateX(-28px);
 }
 
@@ -522,22 +524,26 @@ h4 {
     transition: all 0.4s;
     margin-left: 1rem;
     border-radius: 5px;
-} 
+}
 
 .ready .container .btn__demo2:hover {
     background-color: #dc4f72;
     opacity: 1;
-    text-decoration: none ;
+    text-decoration: none;
 }
 
-.creative .btn:focus,.ready .container .btn__demo2:focus, .Services .container .btn__demo:focus,.Some .right .btn__demo:focus.nav-link{
+.creative .btn:focus,
+.ready .container .btn__demo2:focus,
+.Services .container .btn__demo:focus,
+.Some .right .btn__demo:focus.nav-link {
     border-color: #f0b4c3;
 }
 
-.form-control:focus{
+.form-control:focus {
     border-color: #d74d6f;
 }
-.form-control:focus:focus{
+
+.form-control:focus:focus {
     box-shadow: none;
 }
 
@@ -556,7 +562,8 @@ h4 {
     .features .row {
         gap: 1.56rem;
     }
-    .team-member .items h4{
+
+    .team-member .items h4 {
         text-align: left;
         margin-left: 1.65rem;
         font-size: 1.3rem;
@@ -568,12 +575,15 @@ h4 {
         width: 100%;
     }
 
+    .about .cells {
+        width: 100%;
+    }
+
     .features .row {
         gap: 1rem;
         width: 100%;
     }
 
-   
     .features .row .col {
         width: 47%;
         margin-bottom: 2rem !important;
@@ -591,18 +601,14 @@ h4 {
         width: 50%;
     }
 
-    .header {
-        height: 5.4rem !important;
-    }
 
-   
-    .header {
-        height: 3.9rem !important;
-    }
-    .team-member .items h4{
+
+    .team-member .items h4 {
         text-align: left;
         margin-left: 1.65rem;
     }
+
+
 }
 
 @media screen and (max-width:768px) {
@@ -614,6 +620,7 @@ h4 {
         width: 100%;
         margin-bottom: 2rem !important;
     }
+
     .team-member img {
         width: 100%;
         overflow: 0.1;
@@ -623,16 +630,20 @@ h4 {
         width: 100%;
     }
 
-   
-    .header {
-        height: 2rem !important;
-    }
+
     .creative .btn-submit {
 
         transform: translateX(-10%);
     }
-    .team-member .items h4{
+
+    .team-member .items h4 {
         text-align: left;
         margin-left: 1.65rem;
+    }
+
+}
+@media screen and (max-width:480px){
+    .creative .modal-content {
+        height: 35rem !important;
     }
 }

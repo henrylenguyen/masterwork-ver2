@@ -32,7 +32,7 @@ body {
 }
 
 .contact .right form input {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     height: 3.3rem;
     background-color: #f7f9fc;
 }
@@ -57,10 +57,12 @@ body {
     text-decoration: none;
     opacity: 1;
 }
-.form-control:focus{
+
+.form-control:focus {
     border-color: #d74d6f;
 }
-.form-control:focus:focus{
+
+.form-control:focus:focus {
     box-shadow: none;
 }
 
@@ -117,28 +119,46 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.04);
     ;
 }
+
 @media screen and (max-width:992px) {
-    .contact .col-xs-12{
+    .contact .col-xs-12 {
         width: 100%;
     }
-    .GetInTouch .colum{
+
+    .GetInTouch .colum {
         width: 100%;
     }
+
     .contact .right form .btn__demo {
         margin-left: 80% !important;
     }
 
+    .contact .right form {
+        margin-top: 4rem;
+    }
+
 }
+
 @media screen and (max-width:786px) {
-    .contact .col-xs-12{
+    .contact .col-xs-12 {
         width: 100%;
         margin: 0;
         margin-bottom: 2rem;
     }
+
     .contact .right form {
         margin-top: 7rem;
     }
+
     .contact .right form .btn__demo {
         margin-left: 60% !important;
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+    .contact .right form {
+        margin-top: 11rem;
     }
 }
