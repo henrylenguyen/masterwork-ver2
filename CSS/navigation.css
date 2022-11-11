@@ -32,8 +32,9 @@ p {
   font-weight: 500;
   background: var(--primary__color);
   border: 1px solid var(--primary__color);
-  
+
 }
+
 .button:hover {
   background: #d62f58;
   color: #fff;
@@ -48,6 +49,7 @@ p {
 .dropdown-menu a:hover {
   background-color: #fff;
 }
+
 .header {
   position: relative;
   background: #fff;
@@ -145,6 +147,7 @@ p {
 .disc {
   margin-top: 3rem;
 }
+
 .disc__content {
   background: #fff;
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.9)), url(../images/home/banner.jpg);
@@ -153,12 +156,35 @@ p {
   padding-top: 6.5rem;
   z-index: -1;
 }
+
 .disc__image img {
   transform: rotate(180deg);
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5625rem;
+  }
+
+  .child-nav {
+    margin-top: 1.7rem !important;
+  }
+  .header {
+    height: 5.4rem !important;
+}
+
+
+.header {
+    height: 3.9rem !important;
+}
+}
+
+@media (max-width: 768px) {
+  .child-nav {
+    margin-top: 3.2rem !important;
+  }
+
+  .header {
+    height: 2rem !important;
   }
 }

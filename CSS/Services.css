@@ -182,8 +182,33 @@ h3 {
 
 /* reponsive */
 @media screen and (max-width:992px) {
-    .header {
-        height: 5.5rem !important;
+    .Services .col-top {
+        width: 100%;
     }
 
+    .Services .col-bottom {
+        width: 50%;
+    }
+
+    .products .colum {
+        width: 100%;
+    }
+
+    .products .colum img {
+        width: 50%;
+        transform: translateX(50%);
+        margin-bottom: 3rem;
+    }
+
+    .Some .col-left,
+    .col-right {
+        width: 100% !important;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Services .col-bottom {
+        width: 100% !important;
+    }
 }

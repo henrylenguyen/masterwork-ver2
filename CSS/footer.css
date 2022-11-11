@@ -24,8 +24,8 @@ footer .container li {
 
 footer .container a {
   color: #656f7b;
-  font-size: 1rem!important;
-  font-weight: 400!important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
 }
 
 footer .container a:hover {
@@ -33,26 +33,31 @@ footer .container a:hover {
   transition: all 0.3s;
   text-decoration: none;
 }
-footer > .row{
+
+footer>.row {
   margin: 0 -2rem;
 
 }
-footer .container{
-    border-bottom: 0.01rem solid #d3cccc;
+
+footer .container {
+  border-bottom: 0.01rem solid #d3cccc;
 }
+
 footer .bg-6 {
   padding: 2.2rem;
   background-color: #fff;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
 }
-footer .bg-6 h2{
+
+footer .bg-6 h2 {
   padding-bottom: 0.5rem;
   color: #2C3038;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
+
 footer .bg-6 input {
   margin-top: 0rem;
   height: 3rem;
@@ -62,36 +67,39 @@ footer .bg-6 input {
   font-weight: 450;
   color: #7A7A7A;
 }
+
 .form-control:focus {
   color: inherit;
   background: #F7F9FC;
   border-color: none;
   outline: 0;
-  box-shadow:none;
+  box-shadow: none;
 }
 
 footer .colume p {
   display: inline;
-  margin: 1.5rem 0!important;
-  font-size: 0.9rem!important;
+  margin: 1.5rem 0 !important;
+  font-size: 0.9rem !important;
 }
-footer .col-8, footer .col-4{
+
+footer .col-8,
+footer .col-4 {
   padding: 0;
 }
-footer .col-8{
+
+footer .col-8 {
   flex-grow: 1;
 }
-footer .col-4{
+
+footer .col-4 {
   flex-shrink: 1;
 }
+
 footer .colume {
   padding-top: 2rem;
   padding-bottom: 4rem;
   text-align: left;
-  
-}
-footer .row a{
-  font-size: 0.85rem !important;
+
 }
 
 footer .colume i {
@@ -99,7 +107,8 @@ footer .colume i {
   padding-right: 1.5rem;
   transition: all 0.5s;
 }
-footer .colume i:hover{
+
+footer .colume i:hover {
   color: #dc4f72;
 }
 
@@ -107,9 +116,11 @@ footer .colume2 {
   text-align: right;
 
 }
-footer .form-mail{
+
+footer .form-mail {
   padding-left: 2.7rem;
 }
+
 footer .btn {
   background-color: #dc4f72;
   color: #fff;
@@ -119,45 +130,85 @@ footer .btn {
   margin-left: 1rem;
   box-shadow: none;
 }
-footer .btn:hover{
+
+footer .btn:hover {
   border: 1px solid transparent;
   background: #dc4f72;
 }
+
 footer .colume .row {
   display: flex;
 
 }
+
 @media screen and (max-width:992px) {
 
-   footer .bg-6 {
-     padding: 0rem 0 0 0.4rem;
-   }
+  footer .bg-6 {
+    padding: 0rem 0 0 0.4rem;
+  }
 
-   footer .bg-6 h2 {
-     margin: 0;
-   }
+  footer .bg-6 h2 {
+    margin: 0;
+  }
 
-   footer .colume,
-   .features .colume {
-     width: 100%;
-     text-align: center;
-   }
+  footer .colume,
+  .features .colume {
+    width: 100%;
+    text-align: center;
+  }
 
-   footer .colume {
-     width: 50%;
-     text-align: center;
-   }
- footer .colume i {
-   padding-right: 0.5rem;
- }
+  footer .colume {
+    width: 33% !important;
+    text-align: left !important;
+  }
+
+  footer .colume a {
+    font-size: 1 rem !important;
+  }
+
+  footer .colume {
+    width: 50%;
+    text-align: center;
+  }
+
+  footer .colume i {
+    padding-right: 0.5rem;
+  }
+
+  footer .form-mail {
+    width: 100% !important;
+  }
+
+  footer .colume1 {
+    width: 100%;
+  }
+
+
 }
+
 @media screen and (max-width:768px) {
 
-   footer .colume {
-     width: 100%;
-     text-align: center;
-   }
-    footer .colume i {
-      padding-right: 0.5rem;
-    }
+  footer .colume {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  footer .colume i {
+    padding-right: 0.5rem;
+  }
+
+  .fr-mail {
+    transform: translateX(1rem);
+  }
+}
+
+@media screen and (max-width:480px) {
+  .form-mail {
+    width: 100% !important;
+    transform: translateX(-2.5rem);
+  }
+
+  footer .bg-6 {
+    width: 117%;
+  }
 }
