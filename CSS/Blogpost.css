@@ -153,4 +153,17 @@ button.owl-next {
   .list-single__content{
     grid-template-columns: repeat(1,1fr);
   }
+  .owl-nav button.owl-prev, button.owl-next{
+    top: 15%!important;
+    bottom: 0!important;
+  }
+
+}
+@media screen and  (max-width: 480px){
+  .list-single{
+    padding: 4rem 0;
+  }
+  .pagination .page-item .page-link{
+    font-size: 14px;
+  }
 }

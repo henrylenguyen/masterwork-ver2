@@ -187,7 +187,7 @@ footer .colume .row {
 }
 
 @media screen and (max-width:768px) {
-  .container{
+  footer .container{
     max-width: 90%!important;
     padding: 0;
   }
@@ -207,7 +207,7 @@ footer .container.colume .row .colume2{
 footer .container.colume .row .colume2 a{
   padding: 0 1rem;
 }
-.col-md-5{
+footer .col-md-5{
   width: 100%;
 }
   footer .colume i {
@@ -226,7 +226,7 @@ footer .container.colume .row .colume2 a{
 footer .bg-6 h2{
   padding-bottom: 2rem;
 }
-.col-4 button{
+footer .col-4 button{
   width: 90%;
   
 }
@@ -270,7 +270,7 @@ footer .bg-6 h2{
   form.row.row-cols-lg-auto.g-3.align-items-center .col-4{
     text-align: center;
   }
-  .col-4 button{
+  footer .col-4 button{
     width: 50%;
     
   }

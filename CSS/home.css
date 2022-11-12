@@ -70,9 +70,9 @@ label.industry {
   font-size: 10px;
 }
 
-.disc {
+/* .disc {
   margin-top: 3rem;
-}
+} */
 .disc__content {
   background: #fff;
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.9)), url(../images/home/banner.jpg);
@@ -81,10 +81,12 @@ label.industry {
   padding-top: 6.5rem;
   z-index: -1;
 }
+
 .disc h3 {
   font-size: 3.125rem;
 }
 .disc p {
+  margin-bottom: 0;
   font-size: 18px;
   padding: 0 6rem 2rem 0;
 }
@@ -144,6 +146,7 @@ label.industry {
   border: 1px solid #eee;
   border-radius: 10px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+
 }
 .about__text:hover {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
@@ -182,17 +185,19 @@ label.industry {
   flex-wrap: nowrap;
 }
 .reason h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #fff;
 }
 .reason p {
   color: #fff;
+  font-size: 1rem;
 }
 .reason a {
   background: #fff;
   border: 1px solid #fff;
   color: #212529;
   font-weight: 600;
+  margin-top: 2rem;
 }
 .reason a:hover {
   color: #212529;
@@ -286,7 +291,13 @@ label.industry {
 .FAQs p {
   margin: 0;
 }
-
+.accordion-button:focus{
+  border-color: transparent!important;
+  box-shadow: none;
+}
+#project{
+  display: none;
+}
 .project main .container.w90 {
   width: 75%;
   margin: 0 auto;
@@ -407,5 +418,64 @@ label.industry {
     padding-left: 3rem !important;
   }
 }
-
+@media screen and (max-width: 768px){
+  #project{
+    display: block;
+        margin-bottom: 4rem;
+  }
+  .project .container.w90{
+    display: none;
+  }
+  .container{
+    padding: 0;
+  }
+  .product .col-lg-4.col-md-6.mt-5:nth-child(3){
+    width: 100%;
+  }
+  .about{
+    padding: 0;
+  }
+  .about__left.col-lg-6 {
+    padding-top: 3rem;
+}
+.about__right.col-lg-6{
+  padding: 0;
+  padding-top: 3rem;
+}
+.about__text{
+    margin-bottom: 2rem;
+}
+.solutions .col-lg-4.col-md-6.mt-5:nth-child(3){
+  margin: 0 auto;
+}
+header.text-center.py-5{
+  padding: 0!important;
+}
+button.accordion-button{
+    font-size: 1.5rem!important;
+}
+.project main .container.w90{
+  width: 100%;
+}
+#project button.accordion-button{
+  color: var(--text__color);
+  font-weight: 400!important;
+  font-size: 1.3rem!important;
+      background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(193, 193, 193);
+    padding: 10px;
+}
+#project .accordion-collapse.collapse.show{
+  border-top: 3px solid var(--primary__color)!important;
+}
+.ready .text-center.py-5{
+  padding-top: 5rem!important;
+}
+.ready p{
+  padding: 1.5rem;
+}
+.ready .mb-5.text-center{
+  margin-bottom: 4rem!important;
+}
+}
 /*# sourceMappingURL=home.css.map */

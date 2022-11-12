@@ -6,7 +6,13 @@
   --translateY: translateY(-10px);
   --trainsition05s: all 0.5s;
 }
-
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+   --bs-gutter-x: 0rem!important;
+   padding: 0 1rem!important ;
+}
+.row {
+   --bs-gutter-x: 0rem;
+}
 *{
   margin: 0;
   padding: 0;

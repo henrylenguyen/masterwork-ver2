@@ -1,7 +1,7 @@
 .max-width {
   max-width: 46.8rem;
   margin: 0 auto;
-  padding: 0;
+  padding: 2rem;
 }
 
 a:hover {
@@ -41,7 +41,9 @@ a:hover {
 }
 .blog-content__title {
   margin-top: 5rem;
+  text-align: left;
 }
+
 .blog-content h4 a {
   font-size: 2.1rem;
   color: var(--title__color);
@@ -124,7 +126,9 @@ a:hover {
   gap: 4%;
   justify-items: stretch;
 }
-
+.post-navigation .post-view__prev:hover label,.post-navigation .post-view__next:hover label{
+  color: var(--primary__color)
+}
 .comments h3 {
   font-size: 35px;
   color: var(--title-color);
@@ -229,3 +233,50 @@ a:hover {
 }
 
 /*# sourceMappingURL=BlogSinger.css.map */
+@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden!important;
+  }
+  .text__title{
+    font-size: 2rem;
+  }
+  .blog-content h4 a{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .text__title {
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+  }
+  .text-icon__list li {
+    font-size: 12px;
+  }
+  .blog-content__disc {
+    font-size: 16px;
+    line-height: 1.8rem;
+    opacity: 1;
+}
+.blog-content__image,img.mt-4{
+  margin-bottom: 1.5rem;
+}
+.post-navigation .post-view__prev,.post-navigation .post-view__next{
+  display: block;
+}
+.post-navigation .post-view__prev label ,.post-navigation .post-view__next label{
+  font-size: 15px;
+}
+.post-navigation .post-view__prev img,.post-navigation .post-view__next img{
+  display: none;
+}
+h3.text-left{
+  font-size: 1.3rem;
+  font-weight: 550;
+  opacity: 0.8;
+}
+
+.related-post .col-sm-6{
+  margin-bottom: 2rem;
+}
+}

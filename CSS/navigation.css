@@ -144,9 +144,9 @@ p {
   padding: 0.625rem;
 }
 
-.disc {
+/* .disc {
   margin-top: 3rem;
-}
+} */
 
 .disc__content {
   background: #fff;
@@ -182,6 +182,7 @@ p {
 @media (max-width: 768px) {
   .child-nav {
     margin-top: 3.2rem !important;
+    padding: 0 35px!important;
   }
 
   .header {
