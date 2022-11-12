@@ -3,7 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
 }
-
+.header .nav-link {
+padding-left: 10px !important;
+}
 a:hover {
   text-decoration: none !important;
 }
@@ -232,6 +234,11 @@ a:hover {
   padding: 15px 20px;
 }
 
+@media screen and (max-width:992px) {
+  .creative .modal-content {
+      height: 35rem !important;
+  }
+}
 /*# sourceMappingURL=BlogSinger.css.map */
 @media screen and (max-width: 768px) {
   body{

@@ -1,0 +1,22 @@
+.about {
+    margin: 0 !important;
+}
+.about {
+    background: none;
+    padding: 5rem;
+}
+.about h4{
+    color: #000;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.py-md-3 .col-lg-6{
+    text-align: left;
+}
+.FAQs .accordion-header button {
+    height: 4rem;
+}
+.bottom{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
