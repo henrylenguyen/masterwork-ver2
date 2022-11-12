@@ -199,4 +199,31 @@ p {
   .header {
     height: 2rem !important;
   }
+  ul.nav-item.dropdown-menu.show {
+    margin-top: 20px;
+    position: relative;
+    left: -50%;
+}
+}
+ul.nav-item.dropdown-menu.show li {
+    padding: 10px;
+}
+ul.nav-item.dropdown-menu.show {
+    margin-top: 20px;
+    position: absolute;
+    left: -50%;
+}
+ul.nav-item.dropdown-menu.show::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-top: 1px solid #d2d2d2;
+    border-left: 1px solid #d2d2d2;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    /* z-index: -1; */
+
 }

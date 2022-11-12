@@ -273,4 +273,10 @@ footer .col-4 button{
     width: 50%;
     
   }
+footer .container.colume .row .colume2 a {
+    padding: 0 0.8rem;
+}
+.container.colume {
+    padding: 5rem 0 !important;
+}
 }
