@@ -187,28 +187,91 @@ footer .colume .row {
 }
 
 @media screen and (max-width:768px) {
-
+  .container{
+    max-width: 90%!important;
+    padding: 0;
+  }
   footer .colume {
-    width: 100% !important;
     text-align: left !important;
   }
-
+  footer .container.colume {
+    width: 80%!important;
+}
+footer .container.colume .row{
+  text-align: center;
+}
+footer .container.colume .row .colume2{
+  padding-top: 2rem;
+  text-align: center;
+}
+footer .container.colume .row .colume2 a{
+  padding: 0 1rem;
+}
+.col-md-5{
+  width: 100%;
+}
   footer .colume i {
     padding-right: 0.5rem;
   }
-
+  .form-mail{
+    padding: 0!important;
+  }
   .fr-mail {
     transform: translateX(1rem);
+   
   }
+  footer .bg-6 {
+        padding: 2rem 23px 48px 2.4rem;
 }
-
+footer .bg-6 h2{
+  padding-bottom: 2rem;
+}
+.col-4 button{
+  width: 90%;
+  
+}
+}
 @media screen and (max-width:480px) {
-  .form-mail {
-    width: 100% !important;
-    transform: translateX(-2.5rem);
+  footer .container{
+    width: 90%;
+  }
+  footer .container .row{
+    flex-direction: column;
+  }
+  footer .container .row .colume{
+    width: 100%!important;
+    padding: 0;
+  }
+  footer .container .row .colume h5{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  footer .container .row .colume ul{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  footer .container .row .colume ul li a{
+    font-size: 1rem!important;
   }
 
   footer .bg-6 {
-    width: 117%;
+    padding: 1rem;
+
+  }
+  form.row.row-cols-lg-auto.g-3.align-items-center{
+    align-items: flex-start!important;
+  }
+  form.row.row-cols-lg-auto.g-3.align-items-center div{
+    width: 100%;
+  }
+  form.row.row-cols-lg-auto.g-3.align-items-center p{
+    font-size: 10px!important;
+  }
+  form.row.row-cols-lg-auto.g-3.align-items-center .col-4{
+    text-align: center;
+  }
+  .col-4 button{
+    width: 50%;
+    
   }
 }
