@@ -19,7 +19,7 @@ p {
   color: var(--text__color);
   margin: 1.5rem auto;
   line-height: 1.6rem;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .section__header {
@@ -119,9 +119,6 @@ label.industry {
 .about {
   background: var(--background-color);
   padding: 5rem;
-}
-.about main .container{
-  padding: 0!important;
 }
 .about__left {
   padding-right: 3rem;
@@ -339,6 +336,17 @@ label.industry {
   background-position: center;
   background-attachment: fixed;
 }
+
+.carousel-indicators [data-bs-target]{
+  transform: translateY(3rem);
+  background-color: #fff;
+  height: 0.3rem;
+  width: 2.5rem;
+}
+/* .carousel-indicators #active:hover{
+  background-color:var(--primary__color);
+} */
+
 .testimonials p {
   margin: 0;
 }
@@ -348,6 +356,7 @@ label.industry {
   margin: 1rem;
   padding: 2rem;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 .testimonials-item__content {
   display: grid;
@@ -395,24 +404,51 @@ label.industry {
 .testimonials .owl-nav {
   display: none;
 }
-.testimonials button.owl-dot {
+.testimonials button {
   width: 2.5rem;
   height: 5px;
   margin: 5px;
-  background: #fff;
+  background: black;
 }
-.testimonials button.owl-dot:hover {
+/* .testimonials button:hover {
   background: var(--primary__color);
-}
-.testimonials button.owl-dot.active {
-  background: var(--primary__color);
+} */
+.carousel-indicators .active{
+  background-color:var(--primary__color);
+  opacity: 1;
 }
 
+.carousel-indicators .btn-hover:hover{
+  background-color:var(--primary__color);
+  opacity: 1;
+}
 .ready header p {
   margin: 0;
 }
 
+.row-content{
+  display: flex;
+  justify-content: center
+}
 
+
+.content2{
+  width: 35rem;
+}
+
+.testimonials .carousel-item{
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5625rem;
+  }
+  .pl-lg-5,
+  .px-lg-5 {
+    padding-left: 3rem !important;
+  }
+}
 @media screen and (max-width: 768px){
   #project{
     display: block;
@@ -459,11 +495,6 @@ button.accordion-button{
       background-color: rgb(245, 245, 245);
     border: 1px solid rgb(193, 193, 193);
     padding: 10px;
-    border-radius: 0;
-}
-#project button.accordion-button.btn2{
-  border-top: none;
-  border-bottom: none;
 }
 #project .accordion-collapse.collapse.show{
   border-top: 3px solid var(--primary__color)!important;
@@ -479,67 +510,14 @@ button.accordion-button{
 }
 }
 /*# sourceMappingURL=home.css.map */
+
+
 @media screen and (max-width: 480px){
-    .btn__demo {
-    padding: 12px 25px;
-    }
-  .disc__content {
-    padding-top: 7.5rem;
-}
+  .disc__content{
+    
+  }
   .disc_text h3{
     font-size: 2.2rem;
   }
-.section__header h3{
-  font-size: 2rem;
-}
 
-.about__left.col-lg-6 {
-    padding-right: 0;
 }
-.about .container{
-  margin-bottom: 2rem;
-}
-.reason h3 {
-    font-size: 1.7rem;
-    line-height: 1.3;
-}
-.reason p {
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-    text-align: justify;
-}
-.button {
-    padding: 10px 20px;
-}
-.section__header p{
-  font-size: 1rem;
-}
-.FAQs .accordion-header button{
-  font-size: 1.2rem!important;
-  font-weight: normal;
-  line-height: 2rem;
-}
-.testimonials-item{
-  padding: 1rem;
-}
-.testimonials-item__content{
-  display: block;
-}
-.testimonials-item__image{
-  margin: 0 auto;
-}
-.testimonials-item p:first-child{
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 1.1rem;
-}
-.testimonials-item__text i{
-  left: 45%;
-  top: 10%;
-}
-.testimonials-item__author{
-  text-align: center;
-}
-}
-
