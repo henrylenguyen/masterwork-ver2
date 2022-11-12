@@ -57,6 +57,10 @@ p {
   height: 6rem;
 }
 
+.header .nav-link {
+  padding-left: 10px !important;
+  }
+
 .header .container {
   height: auto;
 
@@ -160,12 +164,19 @@ p {
 .disc__image img {
   transform: rotate(180deg);
 }
-
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5625rem;
+  }
+  .pl-lg-5,
+  .px-lg-5 {
+    padding-left: 3rem !important;
+  }
+}
 @media (max-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5625rem;
   }
-
   .child-nav {
     margin-top: 1.7rem !important;
   }

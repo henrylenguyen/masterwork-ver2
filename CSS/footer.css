@@ -5,7 +5,9 @@ footer .container {
 
 
 }
-
+.bg-light{
+  padding-top: 2rem;
+}
 footer .container h5 {
   padding-top: 0;
   padding-bottom: 1rem;
