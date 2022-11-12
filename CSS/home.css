@@ -407,5 +407,39 @@ label.industry {
     padding-left: 3rem !important;
   }
 }
-
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5625rem;
+  }
+  .pl-lg-5,
+  .px-lg-5 {
+    padding-left: 3rem !important;
+  }
+  .about__right{
+    margin-top: 2rem !important;
+  }
+  .container .sm{
+    margin-top: 3rem;
+  }
+  .solutions .center{
+    transform: translateX(50%);
+  }
+ .bootom {
+    width: 100% !important;
+  }
+  .Completed{
+   margin-top: 2rem;
+  }
+  .Corporate{
+    transform: translateX(50%) !important;
+  }
+}
+@media (max-width: 480px){
+  .Corporate{
+    transform: translateX(-0%) !important;
+  }
+  .Winning{
+    margin-top: 2rem;
+  }
+}
 /*# sourceMappingURL=home.css.map */
