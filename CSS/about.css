@@ -510,7 +510,7 @@ h4 {
 
 .ready .container {
     margin-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 4rem!important;
 }
 
 .ready .container .btn__demo2 {
@@ -646,9 +646,7 @@ h4 {
     .col.p-3.mb-2.bg-white.text-dark{
         width: 100%;
     }
-    .about .container.col-md-12, .about .col.col-sm-6.col-lg-4.col-12{
-        padding-top: 3rem!important;
-    }
+    
     section.ready.jumbotron.text-center{
         margin-bottom: 3rem;
     }
@@ -661,9 +659,7 @@ h4 {
     .creative-header h2{
         font-size: 2rem;
     }
-    main.team-member.bg-light h5{
-        padding: 0;
-    }
+   
     main.team-member.bg-light h2{
         font-size: 2rem;
     }
@@ -673,8 +669,21 @@ h4 {
     .album.py-5 .row div{
         width: 100%;
     }
-    section.ready.jumbotron.text-center h5{
-        
+    section.ready.jumbotron.text-center h2{
+        font-size: 2rem;
     }
+    a.btn__demo.btn-primary.my-2.px-4.py-3 {
+    padding: 10px 20px;
+    margin: 0;
+}
+a.btn__demo.btn-secondary.my-2.py-3.btn__demo2 {
+    padding: 10px 20px;
+}
 }
 
+.about .container.col-md-12, .about .col.col-sm-6.col-lg-4.col-12{
+        padding-top: 3rem!important;
+    }
+     main.team-member.bg-light h5{
+        padding: 0;
+    }

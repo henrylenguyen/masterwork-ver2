@@ -81,9 +81,7 @@ h3 {
     margin-bottom: 3rem;
 }
 
-.Services .container .row {
-    margin-left: 1rem;
-}
+
 
 /* <!-- THE BEST PRODUCTS --> */
 .products .products-items .head {
@@ -208,7 +206,35 @@ h3 {
 }
 
 @media screen and (max-width:768px) {
-    .Services .col-bottom {
-        width: 100% !important;
+.col.col-md-3.col-bottom {
+    margin-top: 2rem;
+}
+.Services h2{
+    font-size: 2rem;
+}
+.Services h3{
+    font-size: 1.5rem;
+}
+}
+@media screen and (max-width:768px) {
+    
+    .Services .container p {
+        font-size: 1.2rem;
+        color: #999;
+        margin: 0;
+        padding-bottom: 2rem;
     }
+    .Services .container a, .products .container a{
+        font-size: 0.9rem;
+    }
+    main.team-member.bg-light h2 {
+    font-size: 1.5rem;
+}
+.album.py-5 .row {
+    display: flex;
+    flex-direction: row;
+}
+.album.py-5 .row div{
+    
+}
 }
